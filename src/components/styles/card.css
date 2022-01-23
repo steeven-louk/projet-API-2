@@ -1,0 +1,1 @@
+.card{background:#242424;border-radius:5px}.card .card-body{padding:0 20px}.card .card-footer{padding-bottom:5px}.card .card-footer span{display:flex;float:right;padding:5px;border:3px solid #fff;border-radius:20px}.card-container{scroll-behavior:smooth}.card-container:hover{box-shadow:2px 2px 3px #ccc;transform:translateY(3px);z-index:1000}
