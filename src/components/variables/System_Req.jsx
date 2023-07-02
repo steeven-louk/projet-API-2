@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/system.scss'
+import './styles/system.css'
 
 const SystemReq = ({data}) => {
   return (

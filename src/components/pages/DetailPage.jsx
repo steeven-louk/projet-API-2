@@ -4,19 +4,14 @@ import { useParams } from 'react-router-dom';
 import SectionDetails from '../SectionDetails';
 import { Link } from 'react-router-dom';
 import { ArrowBackOutlined } from '@material-ui/icons'
-import '../styles/detailsPages.scss'
+import '../styles/detailsPages.css'
 
 const DetailPage = () => {
 
     const {id} = useParams();
-    const [data, setData] = useState([]);
+    const [data, setData] = useState([]); 
 
-    useEffect(() => {
-        fetchData();
-    }, []);
-    
-    
-
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const fetchData = async () =>{
         const response = await axios.request(options);
         setData(response.data);
@@ -24,7 +19,10 @@ const DetailPage = () => {
         console.log(response.data);
     }
 
-
+    useEffect(() => {
+        fetchData();
+    }, [fetchData]);
+    
 
 
 const options = {

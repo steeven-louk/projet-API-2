@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Description from './variables/Description';
 import Screenshot from './variables/Screenshot';
 import SystemReq from './variables/System_Req';
-import './styles/Section.scss'
+import './styles/Section.css'
 
 const SectionDetails = ({data}) => {
     const [card, setCard] = useState('')
